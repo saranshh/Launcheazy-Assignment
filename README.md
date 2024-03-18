@@ -1,13 +1,11 @@
-# Project Title
+# Project Title:
 launcheazy_assignment
 [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)] 
 
 
-## Description
+## Description:
 
 LaunchEazy SPA is a Single Page Application (SPA) built entirely with ReactJS. The project leverages the full potential of React by incorporating reusable components, enhancing modularity, and maintaining codebase scalability. The entire website is perfectly responsive, thanks to the utilization of CSS flexbox properties and media queries. This ensures a seamless user experience across various devices and screen sizes.
-
-
 
 
 ## Live Demo
@@ -33,7 +31,6 @@ Check out the live demo: [Live Demo]
 3. Install dependencies: `npm install`
 
 ## Usage
-
 
 1. Run the development server: `npm start`
 2. Open your browser and visit: `http://localhost:3000`
