@@ -1,6 +1,6 @@
 # Project Title
 launcheazy_assignment
-[![Live Demo](https://img.shields.io/badge/demo-online-green.svg)] 
+[![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://launcheazyy.vercel.app/)
 
 
 ## Description
@@ -12,7 +12,7 @@ LaunchEazy SPA is a Single Page Application (SPA) built entirely with ReactJS. T
 
 ## Live Demo
 
-Check out the live demo: [Live Demo]
+Check out the live demo: [Live Demo](https://launcheazyy.vercel.app/)
 
 ## Screenshots
 
