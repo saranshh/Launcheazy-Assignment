@@ -1,0 +1,165 @@
+.four_main {
+  background-color: #defbe6;
+  margin: 0px auto;
+  position: relative;
+  border-radius: 25px;
+}
+
+#rocket {
+  font-size: 2rem;
+}
+
+.four_con {
+  padding: 4vw 0vw 0vw 0vw;
+  display: flex;
+  justify-content: space-between;
+  max-height: 100%;
+}
+.four_right h4 {
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #6f6f6f;
+}
+
+.four_right h1 {
+  font-family: Helvetica;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  color: #161616;
+}
+
+.four_right p {
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  color: #525252;
+}
+
+.four_left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  overflow: hidden;
+}
+
+.four_left_content {
+  width: 100%;
+  max-height: 100vh;
+  /* Adjust the height as needed */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.four_left_content::-webkit-scrollbar {
+  display: none;
+}
+
+.four_left_content:hover::-webkit-scrollbar {
+  display: auto;
+}
+
+
+.four_left_first_txt {
+  width: 258px;
+}
+
+.four_left_first h1 {
+  font-family: Helvetica;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.four_left_first p {
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #525252;
+}
+
+@media screen and (max-width: 768px) {
+  .four_con {
+    flex-direction: column;
+    /* width: 90%;
+    margin-top: 135vw;
+    padding: 5.5vw; */
+  }
+
+  .four_right {
+    width: 100%;
+  }
+
+  .four_right h1 {
+    font-size: 32px;
+    line-height: 36px;
+    width: auto;
+  }
+
+  .four_right p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .four_left_first {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 2vw;
+  }
+
+  .four_left_first_txt:first-child {
+    min-width: 97%;
+    height: 100%;
+    margin-bottom: 1vw; 
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .four_con {
+    flex-direction: column;
+    width: 90%;
+    margin-top: 5vw;
+    padding: 5vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .four_left_first_txt:not(:first-child) {
+    display: none;
+  }
+}
+
+.four_left_first_txt:first-child {
+  min-width: 97%;
+  height: 100%;
+  margin-bottom: 2vw;
+}
+
+.rocket_up {
+  position: relative;
+  animation: rocket 2s infinite linear;
+}
+
+@keyframes rocket {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30%);
+  }
+}

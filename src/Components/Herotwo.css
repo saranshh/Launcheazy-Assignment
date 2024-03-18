@@ -1,0 +1,173 @@
+main {
+  margin: 0px auto;
+  background-color: #fff1f1;
+  position: relative;
+  margin-top: 51vw;
+  border-radius: 25px;
+}
+
+/* .content {
+  padding: 4vw 4% 0 4%; 
+} */
+.content {
+  padding-top: 2vw;
+}
+.large-container {
+  margin-top: 3vw;
+}
+.part_one {
+  width: 100%; /* Adjusted width to be responsive */
+  max-width: 690px;
+  min-height: 228px;
+}
+
+.part_one p {
+  font-weight: 700;
+  line-height: 1.4;
+  font-family: "Helvetica", sans-serif; /* Use a generic sans-serif as fallback */
+  font-size: 1em; /* Relative font size */
+  margin-top: 3vw;
+  color: #6f6f6f;
+}
+
+.part_one h1 {
+  font-size: 3.2em; /* Relative font size */
+  font-family: "Helvetica", sans-serif;
+  font-weight: 400;
+  color: #161616;
+}
+
+.part_one h4 {
+  font-size: 20px;
+  color: #525252;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: "Helvetica";
+}
+
+.part_one h5 {
+  font-family: "Inter";
+  font-size: 1em; /* Relative font size */
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0em;
+  border: 1px solid black;
+  border-radius: 24px;
+  display: inline-block;
+  padding: 0.6em; /* Relative padding */
+  background-color: #ffffff;
+  width: auto; /* Set width to 100% */
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .part_one h1 {
+    font-size: 2.5em; /* Adjusted font size for smaller screens */
+  }
+
+  .part_one h5 {
+    width: 100%; /* Set width to 100% for small screens */
+  }
+}
+.card_con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.card {
+  width: 100%;
+  max-width: 400px; /* Set a maximum width for the card */
+  height: 454px; /* Let the height adjust based on content */
+  margin: 0 auto 20px; /* Center the card and add margin for spacing between cards */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-color: #ffff;
+  @media screen and (max-width: 768px) {
+    max-width: 100%; /* Make the card full width on smaller screens */
+  }
+
+  &:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.744); /* Smooth shadow on hover */
+  }
+}
+
+.card-image {
+  width: 100%;
+  /* height: auto; */
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out; /* Added transform transition for the image */
+}
+.card:hover .card-image {
+  transform: scale(1.1); /* Scale the image on hover */
+}
+.card-content {
+  padding: 16px;
+  width: auto;
+  height: auto;
+}
+.top_title {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #525252;
+}
+.card-content h2 {
+  font-family: Helvetica;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #161616;
+}
+.card-description {
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  color: #525252;
+  line-height: 24px;
+}
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #525252;
+  line-height: 24px;
+}
+.view_all {
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: helvetica;
+}
+@media screen and (max-width: 768px) {
+  .card {
+    height: auto;
+  }
+  .card_con {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap onto the next line */
+    justify-content: space-around; /* Center cards on smaller screens */
+  }
+
+  .part_one h1 {
+    font-size: 2.5em;
+  }
+
+  .part_one h5 {
+    width: 94%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .card_con {
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow cards to wrap onto the next line */
+    justify-content: space-around;
+  }
+}
